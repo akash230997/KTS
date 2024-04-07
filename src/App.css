@@ -1,38 +1,1018 @@
-.App {
-  text-align: center;
+html {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Head {
+  width: 100%;
+  min-height: 1600px;
+  background-image: url("./Images/Mask\ group.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top_head {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px !important;
+  height: 100px;
+  padding: 0% 5%;
+}
+.menu {
+  cursor: pointer;
+}
+.company_logo {
+  position: relative;
+  left: 12%;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.tab_india {
+  margin: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
+}
+.head_mid {
+  /* border: 1px solid red; */
+  padding: 5% 10%;
+  margin-top: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15%;
+}
+.head_mid .right {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.head_mid .left {
+  width: 30%;
+  height: 100%;
+  color: #fff;
+  /* border: 1px solid red; */
+  font-size: 0.7rem;
+}
+.btn_live_registration button {
+  background-color: #d7c378;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.left_content_header h3 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.container_latest_news {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news_box {
+  flex: 0 0 calc(30.33% - 20px);
+  margin: 10px;
+  padding: 1%;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .news_box {
+    flex-basis: calc(50% - 20px);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 480px) {
+  .news_box {
+    flex-basis: calc(100% - 20px);
+  }
+}
+
+.news_box:hover {
+  border-radius: 20px;
+  background-color: rgba(221, 220, 220, 0.342);
+  cursor: pointer;
+}
+
+/* Medals */
+.container_medals {
+  padding: 3%;
+  background-color: #f3f3f3;
+}
+.btns_m .medal_btns {
+  padding: 2% 5%;
+  border-radius: 25px;
+  border: none;
+  background-color: #81378f;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 3%;
+  position: relative;
+  top: -11% !important;
+}
+.btns_m .medal_btns:nth-child(2) {
+  border: 1px solid #81378f;
+  background-color: #f3f3f3;
+  color: #81378f;
+  font-weight: 700;
+  width: 21%;
+}
+.container_medals .inner_medals_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_medals .inner_medals_container .medals_left {
+  min-width: 40%;
+}
+/* .container_medals .inner_medals_container .medals_left .medals_head {
+} */
+
+.container_medals .inner_medals_container .medals_right {
+  width: 40%;
+}
+
+.schedule_image {
+  background-color: #f3f3f3;
+  padding: 2%;
+  /* height: 1000px; */
+
+  background-image: url("./Images/Schedule/Rectangle\ 4591.png");
+}
+.inner_schedule {
+  width: 80%;
+  margin: auto;
+}
+
+.schedule_image .schedule_head {
+  display: flex;
+  justify-content: space-between;
+}
+.schedule_image .schedule_head .dropdown_btns {
+  margin-right: 2%;
+}
+
+.schedule_image .inner_schedule .schedule_table {
+  /* border: 1px solid #000; */
+  margin-top: 2%;
+}
+
+/* Mascot */
+.mascot_container {
+  background-color: #f3f3f3;
+  padding: 3% 0%;
+}
+.mascor_head {
+  position: relative;
+  top: 12%;
+  left: 5%;
+}
+
+.mascot_container .mascot_inner_container {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+}
+.mascot_container .mascot_inner_container .mascot_left {
+  padding: 5%;
+}
+.mascot_container .mascot_inner_container .mascot_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.moscat_p {
+  font-size: 12px;
+  margin-bottom: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner_image_moscat {
+  position: absolute;
+  top: 13%;
+  left: 22%;
+}
+.mascot_btn {
+  color: #fff;
+  padding: 1.5% 8%;
+  border-radius: 30px;
+  border: none;
+  font-size: 12px;
+  background: rgb(157, 11, 135);
+  background: linear-gradient(
+    94deg,
+    rgba(157, 11, 135, 1) 0%,
+    rgba(34, 40, 100, 1) 97%
+  );
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Conversation */
+.conversation {
+  display: flex;
+  /* min-height: 1000px; */
+}
+.left_conversation {
+  width: 46%;
+  padding: 5%;
+  background-color: #fff;
+}
+.right_conversation {
+  width: 40%;
+  /* background-image: url("./Images/Conversation/Rectangle\ 4591.png");
+  background-repeat: no-repeat; */
+}
+.para {
+  padding: 2% 0%;
+}
+.conversation_heading {
+  padding: 2% 0%;
+}
+.uttrakhand_games {
+  padding: 2% 0%;
+}
+.unique_table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sports_container */
+.sports_container {
+  background-color: #f3f3f3;
+  padding: 3%;
+  background-image: url("./Images/Sports/Rectangle\ 4606.png");
+  background-repeat: no-repeat;
+}
+.container_sports {
+  width: 80%;
+  margin: auto;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0%;
+}
+.social_left {
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.social_left .followUs {
+  margin-bottom: 15%;
+}
+.social_right {
+  width: 50%;
+}
+.social_media {
+  display: inline-block;
+  width: 200px;
+}
+.social_media ul {
+  display: flex;
+  color: #000 !important;
+  justify-content: space-around;
+}
+
+.social_media ul li {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* stadium */
+.stadium {
+  background: rgb(255, 223, 140);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 223, 140, 1) 72%,
+    rgba(255, 242, 209, 1) 92%
+  );
+  width: 50%;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 20px;
+}
+.stadium_img img {
+  border-radius: 20px;
+  /* border: 4px solid red; */
+}
+.stadium_intro {
+  padding: 4%;
+}
+.stadium_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.explore_stadium {
+  border: none;
+  padding: 1% 8%;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.westIconClass {
+  position: absolute;
+  left: 30%;
+  top: 32%;
+  color: rgb(255, 255, 255);
+}
+
+.gallery_container {
+  /* padding: 6%; */
+  background-color: #f3f3f3;
+  /* height: 1000px; */
+  width: 100%;
+  background-image: url("./Images/Gallery/Rectangle\ 4605.png");
+  background-repeat: no-repeat;
+  margin-top: 3%;
+}
+.gallery_heading {
+  padding: 4%;
+}
+.arrowsPosiion {
+  position: relative;
+  top: 5px;
+  left: 35px;
+}
+
+.gallery_crousal {
+  position: relative;
+  top: -10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; /* Align items with equal space between them */
+}
+
+.boxs_gallery {
+  flex-basis: calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+  display: flex; /* Ensure content is centered vertically */
+  flex-direction: column; /* Stack content vertically */
+}
+
+.img_cover_gallery {
+  flex: 1; /* Allow the image container to expand to fill the space */
+}
+
+.img_cover_gallery img {
+  max-width: 80%;
+  height: auto;
+}
+.cover_intro_p {
+  width: 60%;
+  margin: auto;
+  font-family: cursive;
+}
+.buttons_gallery {
+  display: flex;
+  width: 20%;
+  padding: 5px 5px 5px 0px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1%;
+}
+.left_button_g {
+  border: none;
+  background: none;
+  padding: 0%;
+  cursor: pointer;
+  position: relative;
+}
+
+.right_button_g {
+  border: none;
+  background: none;
+  padding: 0%;
+  cursor: pointer;
+}
+/* html {
+  overflow: hidden;
+} */
+.app {
+  background-color: #f3f3f3;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Partners Start*/
+
+.partners {
+  width: 100%;
+  margin-top: 50px;
+}
+.partners_container {
+  width: 80%;
+  margin: auto;
+}
+.games_partners_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  margin-top: 50px;
+}
+
+.games_partners_box img {
+  width: 20%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add spacing between images */
+  /* border: 1px solid #000; */
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .games_partners_box img {
+    flex-basis: calc(50% - 20px); /* Two images per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .games_partners_box img {
+    flex-basis: calc(
+      100% - 20px
+    ); /* Single image per row on even smaller screens */
+  }
+}
+
+/* Partners End */
+
+/* NationalGames Start */
+.nationalGames {
+  margin: 50px 0px 0px 0px;
+}
+/* NationalGames End */
+
+/* Footer Start */
+.Footer {
+  width: 100%;
+  background-color: #0c2e5e;
+  width: 100%;
+  padding: 5% 0%;
+  min-height: 740px;
+  background-image: url("./Images/Footer/Mask\ group.png");
+  background-position: 0% center;
+}
+.footer_container {
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid #000; */
+  display: flex;
+}
+.secA {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.helpline {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hlp_btn {
+  position: relative;
+  padding: 7% 30%;
+  font-size: 1rem;
+  color: #0c2e5e;
+  font-weight: 600;
+  font-family: sans-serif;
+  border-radius: 10px;
+  border: none;
+  top: -8px;
+}
+.blockA {
+  max-height: 700px; /* Set maximum height */
+  overflow-y: auto; /* Add scrollbar if content overflows */
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between; /* Space evenly between columns */
+}
+
+.column {
+  flex: 1; /* Allow columns to grow equally */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column; /* Stack columns vertically */
+  }
+}
+.apps {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.apps img {
+  margin-top: 10px;
+}
+.secA h2 {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+.secA ul li {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2%;
+}
+.reddit {
+  float: right;
+}
+.copy {
+  width: 100%;
+  height: 50px;
+  background-color: #011d46;
+}
+.copy_container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy_container {
+  color: #fff;
+}
+/* Footer End */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for extra small devices */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* CSS rules for small devices */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* CSS rules for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* CSS rules for large devices */
+}
+
+@media only screen and (max-width: 1400px) {
+  /* CSS rules for extra large devices */
+  .social_left {
+    width: 50%;
+    padding: 2%;
+  }
+  .headP img {
+    width: 100%;
+  }
+  .nationalGames img {
+    width: 100%;
+  }
+  .head_mid .right {
+    width: 70%;
+    /* border: 1px solid red; */
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  /* CSS rules for extra large devices */
+  .social_media img {
+    width: 100%;
+  }
+  .footer_container {
+    width: 97%;
+  }
+  .container_medals .inner_medals_container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .medals_left img {
+    width: 90%;
+  }
+  .container_medals {
+    padding: 0%;
+    margin-top: 70px;
+  }
+  .btns_m {
+    display: none;
+  }
+  .container_medals .inner_medals_container .medals_left {
+    min-width: 40%;
+    padding: 0% 10%;
+  }
+  .mascot_container .mascot_inner_container {
+    width: 90%;
+  }
+  .left_conversation {
+    padding: 2%;
+    width: 55%;
+  }
+  .conversation_heading img {
+    width: 60%;
+  }
+  .unique_table img {
+    width: 100%;
+  }
+  .right_conversation img {
+    width: 100%;
+  }
+  .conversation {
+    justify-content: center;
+  }
+  .container_sports {
+    width: 95%;
+  }
+  .social_right img {
+    width: 100%;
+  }
+  .CompitationZone_heading img {
+    width: 95%;
+  }
+  .gallery_crousal {
+    position: relative;
+    top: -5%;
+  }
+  .partners_container {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  /* CSS rules for extra large devices */
+
+  .Head {
+    min-height: 100px;
+  }
+  .container_latest_news {
+    max-width: 100%;
+  }
+  .news_box {
+    flex-basis: calc(45% - 20px);
+  }
+  .container_medals .inner_medals_container .medals_left {
+    min-width: 40%;
+    padding: 0% 4%;
+  }
+  .container_medals .inner_medals_container .medals_right {
+    width: 50%;
+  }
+  .schedule_image .schedule_head .dropdown_btns {
+    width: 70%;
+    margin-right: 2%;
+  }
+  .mascot_container .mascot_inner_container {
+    width: 100%;
+  }
+  .head_mid {
+    padding: 5% 0%;
+  }
+  .stadium {
+    width: 70%;
+  }
+  .gallery_headingImg {
+    width: 50%;
+  }
+  .left_button_g img {
+    width: 80%;
+  }
+  .right_button_g img {
+    width: 85%;
+  }
+  .westIconClass {
+    position: absolute;
+    left: 30%;
+    top: 24%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .head_mid .right {
+    width: 55%;
+  }
+  .footer_container {
+    flex-direction: column;
+  }
+  .secA {
+    height: 300px;
+  }
+  .games_2024 {
+    position: relative;
+    left: -16%;
+    width: 110%;
+  }
+  .games_2024 {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+  .apps img {
+    width: 60%;
+  }
+  .secA h2 {
+    font-size: 1.3rem;
+  }
+  .secA ul li {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+    font-size: 0.8rem;
+  }
+  .helpline {
+    width: 25%;
+  }
+  .copy_container {
+    color: #fff;
+    font-size: 0.7rem;
+  }
+  .blockA {
+    max-height: 700px;
+    overflow-y: hidden;
+  }
+  .tab_india img {
+    width: 60%;
+  }
+  .hlp_btn {
+    position: relative;
+    padding: 4% 13%;
+  }
+  .head_mid {
+    flex-direction: column;
+    margin-top: 2%;
+    gap: 50px;
+  }
+  .head_mid .right {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head_mid .left {
+    width: 80%;
+    display: flex;
+  }
+  .left_content_header {
+    text-align: center;
+  }
+  .left_content_header h3 {
+    font-size: 1rem;
+  }
+  .btn_live_registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .company_logo {
+    position: relative;
+    left: 5%;
+  }
+  .container_medals .inner_medals_container .medals_right {
+    width: 75%;
+  }
+  .schedule_head span img {
+    width: 80%;
+  }
+  .dropdown_btns button {
+    width: 100px;
+    font-size: 0.7rem;
+    /* padding: 0px 16px; */
+    padding: 0%;
+    line-height: 3;
+  }
+  .arrowsPosiion {
+    position: relative;
+    top: 5px;
+    left: 5px;
+  }
+  .inner_image_moscat {
+    position: absolute;
+    top: 23%;
+    left: 22%;
+  }
+  .mascor_head {
+    position: relative;
+    top: 0%;
+    left: 5%;
+  }
+  .right_conversation {
+    /* width: 50%; */
+    display: none;
+  }
+  .left_conversation {
+    padding: 2%;
+    width: 96%;
+  }
+  .social_right {
+    width: 50%;
+    display: none;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0%;
+  }
+  .compitation_left_EX {
+    width: 80%;
+  }
+  .CompitationZone_heading {
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .head_mid .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_medals .inner_medals_container .medals_right {
+    width: 100%;
+  }
+  .schedule_image .schedule_head .dropdown_btns {
+    width: 90%;
+    margin-right: 2%;
+  }
+  .mascot_container {
+    padding: 0%;
+  }
+  .mascot_container .mascot_inner_container .mascot_right {
+    width: 60%;
+  }
+  .inner_image_moscat {
+    position: absolute;
+    top: 26%;
+    left: 20%;
+  }
+  .social_left {
+    width: 70%;
+    padding: 2%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .copy_container {
+    color: #fff;
+    font-size: 0.5rem;
+  }
+  .helpline {
+    width: 50%;
+  }
+  .tab_india img {
+    width: 80%;
+  }
+  .container_medals .inner_medals_container .medals_right {
+    width: 122%;
+  }
+  .schedule_head span img {
+    width: 100%;
+  }
+  .schedule_head span img {
+    width: 100%;
+    position: relative;
+    top: 31%;
+  }
+  .schedule_image .schedule_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .schedule_image .schedule_head .dropdown_btns {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-evenly;
+  }
+  .mascot_container .mascot_inner_container .mascot_right {
+    width: 60%;
+    display: none;
+  }
+  .social_left {
+    width: 100%;
+    padding: 2%;
+  }
+  .followUs img {
+    width: 80%;
+  }
+  .uttrakhand_social img {
+    width: 80%;
+  }
+  .gallery_container {
+    min-height: 300px;
+  }
+  .gallery_crousal {
+    position: relative;
+    top: -10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .gallery_container {
+    background-image: none;
+  }
+  .buttons_gallery {
+    display: none;
+  }
+  .gallery_headingImg {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .head_mid .right img {
+    width: 100% !important;
+  }
+  .head_mid .left {
+    width: 95%;
+  }
+  .news_box {
+    flex-basis: calc(100%);
+  }
+  .news_box {
+    display: flex;
+    flex-basis: calc(100%);
+    justify-content: center;
+  }
+  .news_box img {
+    width: 90%;
+  }
+  .container_medals .inner_medals_container .medals_right {
+    display: none;
+  }
+  .medals_left img {
+    width: 100%;
+  }
+  .mascor_head {
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+  .moscat_p {
+    width: 80%;
+  }
+  .followUs img {
+    width: 95%;
+  }
+  .uttrakhand_social img {
+    width: 95%;
+  }
+  .stadium {
+    width: 90%;
   }
 }

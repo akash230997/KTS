@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import CompitationZone from './Components/CompitationZone';
+import Conversation from './Components/Conversation';
+import Footer from './Components/Footer';
+import Gallery from './Components/Gallery';
+import Header from './Components/Header';
+import LatestNews from './Components/LatestNews';
+import Mascot from './Components/Mascot';
+import Medals from './Components/Medals';
+import NationalGames from './Components/NationalGames';
+import Partners from './Components/Partners';
+import Schedule_container from './Components/Schedule_container';
+import Social from './Components/Social';
+import Sports from './Components/Sports';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <LatestNews />
+      <Medals />
+      <Schedule_container />
+      <Mascot />
+      <Conversation />
+      <Sports />
+      <Social />
+      <CompitationZone />
+      <Gallery />
+      <Partners />
+      <NationalGames />
+      <Footer />
     </div>
   );
 }

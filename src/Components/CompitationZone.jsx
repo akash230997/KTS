@@ -1,0 +1,34 @@
+import indiaGlobe from '../Images/CompitationZone/Mask group.png'
+import CompitationZone_heading from '../Images/CompitationZone/Competition Zone.png'
+import stadium from '../Images/CompitationZone/Rectangle 4577.png'
+import venus from '../Images/CompitationZone/Frame 1339.png'
+
+function CompitationZone() {
+    return (
+        <div className="CompitationZone">
+            <div className="social">
+                <div className="social_left compitation_left_EX">
+                    <div className="CompitationZone_heading">
+                        <img src={CompitationZone_heading} alt="" />
+                    </div>
+                    <div className="stadium">
+                        <div className="stadium_img"><img src={stadium} alt="" width="100%" /></div>
+                        <div className="stadium_intro">
+                            <h4>Delhi</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae id expedita perspiciatis repellendus vitae? Eius soluta officiis iure exercitationem asperiores tempore iusto sequi rem inventore dolore atque..</p>
+                            <div className="stadium_footer">
+                                <button className='explore_stadium'>Explore</button>
+                                <img src={venus} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="social_right">
+                    <img src={indiaGlobe} alt="" width="100%" />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default CompitationZone
