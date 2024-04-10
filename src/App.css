@@ -1,3 +1,6 @@
+/* @import url("./Font/Paris2024-Variable.ttf"); */
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap");
+
 html {
   overflow-x: hidden;
 }
@@ -57,9 +60,18 @@ html {
   margin-top: 15%;
 }
 .head_mid .right {
-  width: 50%;
+  width: 45%;
   height: 100%;
+  color: #fff;
   /* border: 1px solid red; */
+}
+.head_mid .right h1 {
+  font-size: 4.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.head_mid .right p {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .head_mid .left {
   width: 30%;
@@ -73,6 +85,8 @@ html {
   padding: 5px;
   border-radius: 5px;
   border: none;
+  margin: 5% 0% !important;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 .left_content_header h3 {
@@ -93,10 +107,31 @@ html {
 }
 
 .news_box {
-  flex: 0 0 calc(30.33% - 20px);
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 115px;
+  flex-basis: calc(30.33% - 20px);
   margin: 10px;
-  padding: 1%;
+  padding: 0 15px;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  gap: 10px;
+  /* border: 1px solid red; */
+  border-left: 1px solid rgb(185, 185, 185);
+}
+.news_box .news_content h3,
+p {
+  margin: 0%;
+  padding: 0%;
+  font-size: 1rem;
+  font-family: sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.news_box .news_content p {
+  font-size: 0.8rem;
 }
 
 /* Media queries for responsiveness */
@@ -114,9 +149,13 @@ html {
 }
 
 .news_box:hover {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: rgba(221, 220, 220, 0.342);
   cursor: pointer;
+}
+.news_box:hover .news_content h3 {
+  font-weight: bold;
+  color: #81378f;
 }
 
 /* Medals */
@@ -134,6 +173,10 @@ html {
   margin-left: 3%;
   position: relative;
   top: -11% !important;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  font-weight: 700;
+  border: 1px solid #81378f;
 }
 .btns_m .medal_btns:nth-child(2) {
   border: 1px solid #81378f;
@@ -141,7 +184,17 @@ html {
   color: #81378f;
   font-weight: 700;
   width: 21%;
+  transition: all 0.6s ease-in-out;
 }
+.btns_m .medal_btns:nth-child(2):hover {
+  background-color: #81378f;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* .btns_m .medal_btns:nth-of-type(1):hover {
+  background-color: #fff;
+  color: #81378f;
+} */
 .container_medals .inner_medals_container {
   width: 90%;
   margin: auto;
@@ -150,7 +203,7 @@ html {
 }
 
 .container_medals .inner_medals_container .medals_left {
-  min-width: 40%;
+  min-width: 55%;
 }
 /* .container_medals .inner_medals_container .medals_left .medals_head {
 } */
@@ -174,6 +227,7 @@ html {
 .schedule_image .schedule_head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .schedule_image .schedule_head .dropdown_btns {
   margin-right: 2%;
@@ -256,6 +310,8 @@ html {
 }
 .para {
   padding: 2% 0%;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .conversation_heading {
   padding: 2% 0%;
@@ -264,9 +320,11 @@ html {
   padding: 2% 0%;
 }
 .unique_table {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: flex;
+  flex-direction: column;
 }
 
 /* sports_container */
@@ -338,6 +396,7 @@ html {
 .stadium_footer {
   display: flex;
   justify-content: space-between;
+  margin-top: 5%;
 }
 .explore_stadium {
   border: none;
@@ -582,7 +641,481 @@ ul {
 .copy_container {
   color: #fff;
 }
+
 /* Footer End */
+
+.medal_tally {
+  /* border: 2px solid black; */
+  width: 100%;
+  /* background-color: #fff; */
+  padding: 2%;
+}
+.medal_header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.medal_header h1 {
+  font-size: 4rem;
+  font-family: cursive;
+  background: #8f8250;
+  background: linear-gradient(to right, #8f8250 0%, #2d2919 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.medal_table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.multiple_medals {
+  border: 2px solid gray !important;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 5% 0%;
+  display: flex;
+}
+.left_table {
+  width: 30%;
+}
+.right_table {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+.rows td {
+  padding: 2%;
+  width: 5%;
+  z-index: 2;
+}
+.grandTotal {
+  padding: 3%;
+  width: 30px;
+}
+.overlap_table {
+  width: 160px;
+  height: 360px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  top: 12%;
+  left: 15%;
+}
+
+.unique_d {
+  z-index: 11;
+  width: 20%;
+  /* border: 1px solid red;
+  position: absolute;
+  top: 41%; */
+}
+.btns_m {
+  margin: 5% 0%;
+}
+
+.schedule_heading {
+  font-size: 4rem;
+  margin: 0%;
+  padding: 0%;
+  background: #ac88a7;
+  background: linear-gradient(to right, #ac88a7 0%, #4d607c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: "Paris2024-Variable"; */
+  font-family: "cursive";
+}
+
+.s_table {
+  width: 100%;
+}
+
+.schedule_table {
+  width: 100%;
+  border-collapse: collapse; /* Add this line */
+}
+
+.schedule_table thead tr {
+  background-color: #81378f;
+  color: #fff;
+  height: 80px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.schedule_table th,
+.schedule_table td {
+  padding: 10px; /* Adjust padding as needed */
+  text-align: left; /* Align text to the left */
+}
+
+/* Remove borders */
+/* .schedule_table th {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+} */
+.schedule_table th,
+.schedule_table td {
+  /* border: none; */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  font-family: cursive;
+  font-size: 1.3rem;
+}
+.venues {
+  width: 20%;
+}
+
+.Conversation_headin {
+  color: #81378f;
+  font-size: 6rem;
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.uttrakhand_games {
+  font-size: 2rem;
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.upContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bottomContainer {
+  border-top: 1px solid gray;
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.unique_box {
+  width: 100%;
+  margin: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 14%;
+}
+.boxx {
+  width: 40%;
+  height: 200px;
+  /* border: 1px solid #000; */
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.6s ease-in-out;
+}
+.boxx:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+.boxx p {
+  font-size: 1.5rem;
+  margin: 0%;
+  padding: 0%;
+}
+.box_inner p {
+  color: gray;
+  font-size: 1.2rem;
+  margin: 0%;
+  padding: 0%;
+}
+.boxx h1 {
+  font-size: 3rem;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Recursive", sans-serif;
+  font-optical-sizing: auto;
+}
+.brs {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.brs2 {
+  border-left: 1px solid gray;
+}
+.sportsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boxs_sports {
+  width: calc(15% - 20px); /* Adjust width to fit 3 items per row */
+  margin: 10px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Images/Sports/frame_image.png");
+  background-repeat: no-repeat;
+}
+
+.boxs_sports img {
+  position: relative;
+  left: 12%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.boxs_sports p {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 1024px) {
+  .boxs_sports {
+    width: calc(50% - 20px); /* Adjust width to fit 2 items per row */
+  }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 768px) {
+  .boxs_sports {
+    width: calc(100% - 20px); /* Adjust width to fit 1 item per row */
+  }
+}
+.followUs {
+  color: #81378f;
+  font-size: 6rem;
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.compitationZone {
+  margin: 0%;
+  padding: 0%;
+  font-size: 5rem;
+  background: #ceb5c3;
+  background: linear-gradient(to right, #ceb5c3 0%, #8d5182 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.up_container_sports {
+  display: flex;
+  /* border: 1px solid #000; */
+  padding: 0% 12%;
+  justify-content: space-between;
+  align-items: center;
+}
+.sports_heading {
+  color: #8d5182;
+  font-size: 5rem;
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sprts_btn {
+  padding: 1% 3%;
+  border: none;
+  border-radius: 25px;
+  background: rgb(155, 11, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(155, 11, 135, 1) 36%,
+    rgba(33, 40, 100, 1) 92%
+  );
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.6s ease-in-out;
+  line-height: 1;
+}
+.sprts_btn:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+.tab_india_block {
+  /* border: 1px solid #000; */
+  background-color: #fff;
+  width: 40%;
+  border-radius: 50px;
+  height: 70px;
+  display: flex;
+  padding: 5px 2%;
+}
+.images_tabIndia {
+  width: 65%;
+  border: 1px solid #000;
+  display: flex;
+  border-radius: 2px;
+  justify-content: center;
+}
+.days_hrs {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.days {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.days h1 {
+  font-size: 1.5rem;
+  margin: 0%;
+  padding: 0%;
+  font-family: cursive;
+}
+.days p {
+  font-family: cursive;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer h1 {
+  margin: 0%;
+  padding: 0%;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+.timer p {
+  font-family: cursive;
+}
+.hrsT {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mascot_heading p,
+h1 {
+  color: #8d5182;
+}
+.mascot_heading h1 {
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.mascot_heading p {
+  margin: 0%;
+  padding: 0%;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.moscat_p {
+  width: 80%;
+}
+.social_right {
+  position: relative;
+}
+.dropdown_compitation_component {
+  position: absolute;
+  top: 2%;
+  left: 0%;
+}
+.flag {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+/* Partners */
+.partners {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* width: 40%; */
+}
+.line1 {
+  border: 1px solid gray;
+  width: 38%;
+}
+.part {
+  min-width: 20%;
+  text-align: center;
+  /* padding: 10px; */
+  /* font-family: "Courier New", Courier, monospace; */
+  /* font-weight: 600; */
+  font-family: "Times New Roman", Times, serif;
+}
+.line2 {
+  border: 1px solid gray;
+  width: 38%;
+}
+/* Partners */
+.nationalGames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.numbers_UI {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.numbers_UI .row1 h1 {
+  color: #000;
+  /* color: #b8b6b6; */
+  text-align: center;
+  font-size: 12rem;
+  margin: 0%;
+  padding: 0%;
+}
+.national_Games_board {
+  /* border: 1px solid #000; */
+  padding: 2%;
+  width: 15%;
+  height: 380px;
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  -webkit-box-shadow: -8px 10px 5px 0px rgba(232, 232, 232, 1);
+  -moz-box-shadow: -8px 10px 5px 0px rgba(232, 232, 232, 1);
+  box-shadow: -8px 10px 5px 0px rgba(232, 232, 232, 1);
+}
+.innerPs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #000; */
+}
+.innerPs p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 80%;
+}
+.innerPs .days_hrs .days h1,
+p {
+  color: #000;
+}
+.innerPs .days_hrs .timer .hrsT h1,
+p {
+  color: #000;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -691,7 +1224,112 @@ ul {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
   /* CSS rules for extra large devices */
-
+  .tab_india_block {
+    width: 60%;
+  }
+  .images_tabIndia {
+    width: 60%;
+  }
+  .right_table {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    width: 60%;
+  }
+  .right_table img {
+    width: 20%;
+  }
+  .overlap_table {
+    display: none;
+  }
+  .schedule_image {
+    padding: 0;
+  }
+  .inner_schedule {
+    width: 99%;
+    margin: auto;
+  }
+  .boxx {
+    width: 30%;
+    padding: 10px;
+  }
+  .boxx p {
+    font-size: 1.2rem;
+  }
+  .boxx p {
+    font-size: 1rem;
+  }
+  .boxx h1 {
+    font-size: 2rem;
+  }
+  .boxx {
+    height: 150px;
+  }
+  .Conversation_headin {
+    color: #81378f;
+    font-size: 4rem;
+  }
+  .uttrakhand_games {
+    font-size: 1.4rem;
+  }
+  .para {
+    padding: 2% 0%;
+    font-size: 1.5rem;
+  }
+  .unique_box {
+    width: 100%;
+    margin: auto;
+    height: 350px;
+  }
+  .unique_box {
+    width: 100%;
+    margin: auto;
+    height: 350px;
+    margin-top: 10%;
+  }
+  .sports_container {
+    background-color: #f3f3f3;
+    padding: 0%;
+  }
+  .container_sports {
+    width: 100%;
+  }
+  .up_container_sports {
+    display: flex;
+    /* border: 1px solid #000; */
+    padding: 0% 2%;
+  }
+  .boxs_sports {
+    width: calc(25% - 20px);
+    height: 250px;
+  }
+  .followUs {
+    color: #81378f;
+    font-size: 4rem;
+  }
+  .compitationZone {
+    margin: 0%;
+    padding: 0%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .social_right img:nth-child(2) {
+    /* border: 1px solid #000; */
+    width: 15%;
+  }
+  .numbers_UI .row1 h1 {
+    color: #000;
+    /* color: #b8b6b6; */
+    text-align: center;
+    font-size: 7rem;
+  }
+  .national_Games_board {
+    /* border: 1px solid #000; */
+    padding: 2%;
+    width: 20%;
+  }
+  .nationalGames img {
+    width: 80%;
+  }
   .Head {
     min-height: 100px;
   }
@@ -738,11 +1376,144 @@ ul {
 }
 
 @media only screen and (max-width: 1000px) {
+  .days h1 {
+    font-size: 1.2rem;
+  }
+  .timer h1 {
+    font-size: 1.2rem;
+  }
+  .tab_india_block {
+    width: 72%;
+  }
+  .images_tabIndia {
+    width: 64%;
+  }
   .head_mid .right {
+    flex-direction: column;
+  }
+  /* .head_mid .right {
     width: 55%;
+  } */
+  .head_mid .right {
+    width: 65% !important;
+  }
+  .head_mid .right p {
+    width: 100%;
+  }
+  .medal_header h1 {
+    font-size: 3rem;
+  }
+  /* .medals_left img:nth-child(1) {
+    width: 70%;
+  } */
+  .container_medals .inner_medals_container .medals_right {
+    width: 75%;
+    display: none;
+  }
+  .container_medals .inner_medals_container .medals_left {
+    min-width: 90%;
+    padding: 0% 4%;
+  }
+  .right_table img {
+    width: 10%;
+  }
+  .container_medals .inner_medals_container {
+    margin-bottom: 6%;
+  }
+  .sports_heading {
+    color: #8d5182;
+    font-size: 4rem;
+  }
+  .up_container_sports {
+    padding: 3% 2%;
+  }
+  .social_left {
+    align-items: center;
+  }
+  .followUs {
+    color: #81378f;
+    font-size: 6rem;
+  }
+  .compitationZone {
+    font-size: 4rem;
+  }
+  .CompitationZone_heading {
+    padding: 5% 0%;
+  }
+  .stadium {
+    width: 43%;
   }
   .footer_container {
     flex-direction: column;
+  }
+  .mascot_heading p,
+  h1 {
+    color: #8d5182;
+    font-size: 1.3rem;
+  }
+  .numbers_UI .row1 h1 {
+    font-size: 6rem;
+  }
+  .national_Games_board {
+    /* border: 1px solid #000; */
+    padding: 1%;
+    width: 25%;
+  }
+  .national_Games_board {
+    /* border: 1px solid #000; */
+    padding: 2%;
+    width: 25%;
+    height: 320px;
+  }
+  .tab_india_block {
+    width: 72%;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  .schedule_table th,
+  .schedule_table td {
+    font-size: 0.7rem !important;
+  }
+  .schedule_heading {
+    font-size: 3rem;
+  }
+  .mascot_heading h1 {
+    font-size: 2rem;
+  }
+  .mascot_container .mascot_inner_container {
+    width: 92%;
+  }
+  .inner_image_moscat {
+    position: absolute;
+    top: 22%;
+    left: 18%;
+  }
+  .boxs_sports {
+    width: calc(34% - 20px);
+    height: 250px;
+  }
+  .followUs {
+    color: #81378f;
+    font-size: 5rem;
+  }
+  .compitationZone {
+    font-size: 3rem;
+  }
+  .stadium {
+    width: 50%;
+  }
+  .images_tabIndia {
+    width: 50%;
+  }
+  .tab_india img {
+    width: 16% !important;
+  }
+  .head_mid .right h1 {
+    font-size: 3.5rem;
+  }
+  .schedule_table th,
+  .schedule_table td {
+    font-size: 1rem;
   }
   .secA {
     height: 300px;
@@ -874,6 +1645,32 @@ ul {
   }
 }
 @media only screen and (max-width: 700px) {
+  .numbers_UI .row1 h1 {
+    font-size: 4rem;
+  }
+  .nationalGames img {
+    width: 50%;
+  }
+  .innerPs p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .national_Games_board {
+    height: 235px;
+  }
+  .days h1 {
+    font-size: 0.8rem;
+  }
+  .timer h1 {
+    font-size: 0.8rem;
+  }
+  .hrsT {
+    padding: 5px;
+  }
+  .innerPs p {
+    /* text-align: center; */
+    font-size: 0.7rem;
+  }
   .head_mid .left {
     width: 50%;
     display: flex;
@@ -972,6 +1769,74 @@ ul {
   }
   .gallery_headingImg {
     width: 100%;
+  }
+  .images_tabIndia {
+    display: none;
+    width: 50%;
+  }
+
+  .days_hrs {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  .head_mid .right {
+    width: 90% !important;
+  }
+  .head_mid .left {
+    width: 95%;
+  }
+  .left_content_header h3 {
+    font-size: 1.4rem;
+  }
+  .news_box {
+    flex-basis: calc(95% - 20px);
+  }
+  .mascot_container .mascot_inner_container {
+    width: 100%;
+  }
+  .sports_heading {
+    color: #8d5182;
+    font-size: 3rem;
+  }
+  .boxs_sports {
+    width: calc(57% - 20px);
+    height: 250px;
+  }
+  .sprts_btn {
+    padding: 3% 3%;
+  }
+  .compitationZone {
+    font-size: 2rem;
+  }
+  .stadium {
+    width: 75%;
+  }
+  .numbers_UI .row1 h1 {
+    font-size: 3rem;
+  }
+  .nationalGames img {
+    width: 60%;
+  }
+  .national_Games_board {
+    height: 145px;
+  }
+  .days h1 {
+    font-size: 0.7rem;
+  }
+  .days {
+    padding: 0px;
+  }
+  .hrsT {
+    padding: 1px;
+  }
+  .innerPs p {
+    /* text-align: center; */
+    font-size: 0.5rem;
+  }
+  .timer h1 {
+    font-size: 0.7rem;
   }
 }
 @media only screen and (max-width: 400px) {

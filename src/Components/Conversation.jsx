@@ -9,11 +9,52 @@ function Conversation() {
         <div className="mascot_container">
             <div className="conversation">
                 <div className="left_conversation">
-                    <div className="para"><img src={para} alt="" /></div>
-                    <div className="conversation_heading"><img src={conversation_heading} alt="" /></div>
-                    <div className="uttrakhand_games"><img src={uttrakhand_games} alt="" /></div>
+                    <div className="para">Join the</div>
+                    <div className="conversation_heading"><h1 className='Conversation_headin'>Conversation</h1></div>
+                    <div className="uttrakhand_games"><p className='uttrakhand_games'>#UTTRAKHANDGAMES2024</p></div>
                     <div className="unique_table">
-                        <img src={unique_table} alt="" />
+                        <div className="unique_box">
+                            <div className="upContainer">
+                                <div className="boxx">
+                                    <p>ALL TOGEATHER</p>
+                                    <div className="box_inner">
+                                        <h1>28</h1>
+                                        <p>State</p>
+                                    </div>
+                                </div>
+                                <div className="boxx brs">
+                                    <p>COLLECTIVELY</p>
+                                    <div className="box_inner">
+                                        <h1>8 + 1</h1>
+                                        <p>UNION TERRITORY & CONTROL BOARD</p>
+                                    </div>
+                                </div>
+                                <div className="boxx">
+                                    <p>WE ARE UNIFIED</p>
+                                    <div className="box_inner">
+                                        <h1>8000+</h1>
+                                        <p>ATHLETES</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="bottomContainer">
+                                <div className="boxx">
+                                    <p>COMPETETION</p>
+                                    <div className="box_inner">
+                                        <h1>22</h1>
+                                        <p>DAYS</p>
+                                    </div>
+                                </div>
+                                <div className="boxx brs2">
+                                    <p>SERVICES</p>
+                                    <div className="box_inner">
+                                        <h1>4000</h1>
+                                        <p>VOLENTEERS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <img src={unique_table} alt="" /> */}
                     </div>
                 </div>
                 <div className="right_conversation">

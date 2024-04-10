@@ -24,6 +24,7 @@ import Game16 from "../Images/Partners/FouthSection/Frame 1331.png"
 // Fifith
 import Game17 from "../Images/Partners/FifthSection/Frame 1315.png"
 import Game18 from "../Images/Partners/FifthSection/Frame 1316.png"
+import GamersPartners from "./GamersPartners"
 
 function Partners() {
     return (
@@ -31,7 +32,8 @@ function Partners() {
             <div className="partners_container">
                 <div className="top_partners">
                     <div className="headP">
-                        <img src={Games_partners} alt="" />
+                        {/* <img src={Games_partners} alt="" /> */}
+                        <GamersPartners props="GAMES PARTNERS" />
                     </div>
                     <div className="games_partners_box">
                         <img src={Game} alt="" />
@@ -42,7 +44,8 @@ function Partners() {
                 </div>
                 <div className="top_partners" style={{ marginTop: "50px" }}>
                     <div className="headP">
-                        <img src={Games_partners2} alt="" />
+                        <GamersPartners props="SUPPORTED BY" />
+                        {/* <img src={Games_partners2} alt="" /> */}
                     </div>
                     <div className="games_partners_box">
                         <img src={Game5} alt="" />
@@ -52,7 +55,8 @@ function Partners() {
                 </div>
                 <div className="top_partners" style={{ marginTop: "50px" }}>
                     <div className="headP">
-                        <img src={Games_partners3} alt="" />
+                        <GamersPartners props="ASSOCIATE SPONSORS" />
+                        {/* <img src={Games_partners3} alt="" /> */}
                     </div>
                     <div className="games_partners_box">
                         <img src={Game8} alt="" />
@@ -63,7 +67,8 @@ function Partners() {
                 </div>
                 <div className="top_partners" style={{ marginTop: "50px" }}>
                     <div className="headP">
-                        <img src={Games_partners4} alt="" />
+                        <GamersPartners props="PARTNERS" />
+                        {/* <img src={Games_partners4} alt="" /> */}
                     </div>
                     <div className="games_partners_box">
                         <img src={Game13} alt="" />
@@ -74,7 +79,8 @@ function Partners() {
                 </div>
                 <div className="top_partners" style={{ marginTop: "50px" }}>
                     <div className="headP">
-                        <img src={Games_partners5} alt="" />
+                        <GamersPartners props="BROADCAST PARTNERS" />
+                        {/* <img src={Games_partners5} alt="" /> */}
                     </div>
                     <div className="games_partners_box">
                         <img src={Game17} alt="" />

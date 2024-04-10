@@ -10,7 +10,8 @@ function Social() {
         <div className="social">
             <div className="social_left">
                 <div className="followUs">
-                    <img src={followUs} alt="" />
+                    {/* <img src={followUs} alt="" /> */}
+                    <h1 className='followUs'>Follow Us</h1>
                 </div>
                 <div className="social_media">
                     <ul>
@@ -21,7 +22,8 @@ function Social() {
                     </ul>
                 </div>
                 <div className="uttrakhand_social">
-                    <img src={uttrakhand_social} alt="" />
+                    <div className="uttrakhand_games"><p className='uttrakhand_games'>#UTTRAKHANDGAMES2024</p></div>
+                    {/* <img src={uttrakhand_social} alt="" /> */}
                 </div>
             </div>
             <div className="social_right">

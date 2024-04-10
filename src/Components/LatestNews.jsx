@@ -1,9 +1,9 @@
-import news1 from "../Images/latest news/Frame 1417.png";
-import news2 from "../Images/latest news/Frame 1419.png";
-import news3 from "../Images/latest news/Frame 1421.png";
-import news4 from "../Images/latest news/Frame 1418.png";
-import news5 from "../Images/latest news/Frame 1420.png";
-import news6 from "../Images/latest news/Frame 1422.png";
+import news1 from "../Images/News_Latest/Rectangle 4542.png";
+import news2 from "../Images/News_Latest/Rectangle 4542 (5).png";
+import news3 from "../Images/News_Latest/Rectangle 4542 (4).png";
+import news4 from "../Images/News_Latest/Rectangle 4542 (3).png";
+import news5 from "../Images/News_Latest/Rectangle 4542 (2).png";
+import news6 from "../Images/News_Latest/Rectangle 4542 (1).png";
 function LatestNews() {
     return (
         <>
@@ -11,22 +11,46 @@ function LatestNews() {
                 <h2 style={{ color: '#81378F' }}>Latest News</h2>
                 <div className="news">
                     <div className="news_box">
-                        <img src={news1} alt="" width="70%" />
+                        <div className="img"><img src={news1} alt="" /></div>
+                        <div className="news_content">
+                            <h3>Swasti Singh's gold powers Odisha Past 50 medals</h3>
+                            <p>Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skills of swasti Singh.</p>
+                        </div>
                     </div>
                     <div className="news_box">
-                        <img src={news2} alt="" width="70%" />
+                        <div className="img"><img src={news2} alt="" /></div>
+                        <div className="news_content">
+                            <h3>Swasti Singh's gold powers Odisha Past 50 medals</h3>
+                            <p>Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skills of swasti Singh.</p>
+                        </div>
                     </div>
                     <div className="news_box">
-                        <img src={news3} alt="" width="70%" />
+                        <div className="img"><img src={news3} alt="" /></div>
+                        <div className="news_content">
+                            <h3>Swasti Singh's gold powers Odisha Past 50 medals</h3>
+                            <p>Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skills of swasti Singh.</p>
+                        </div>
                     </div>
                     <div className="news_box">
-                        <img src={news4} alt="" width="70%" />
+                        <div className="img"><img src={news4} alt="" /></div>
+                        <div className="news_content">
+                            <h3>Swasti Singh's gold powers Odisha Past 50 medals</h3>
+                            <p>Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skills of swasti Singh.</p>
+                        </div>
                     </div>
                     <div className="news_box">
-                        <img src={news5} alt="" width="70%" />
+                        <div className="img"><img src={news5} alt="" /></div>
+                        <div className="news_content">
+                            <h3>Swasti Singh's gold powers Odisha Past 50 medals</h3>
+                            <p>Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skills of swasti Singh.</p>
+                        </div>
                     </div>
                     <div className="news_box">
-                        <img src={news6} alt="" width="70%" />
+                        <div className="img"><img src={news6} alt="" /></div>
+                        <div className="news_content">
+                            <h3>Swasti Singh's gold powers Odisha Past 50 medals</h3>
+                            <p>Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skills of swasti Singh.</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,11 @@ function Mascot() {
             <div className="mascot_inner_container">
                 <div className="mascot_left">
                     <div className="mascor_head">
-                        <img src={the_mascot} alt="" />
+                        {/* <img src={the_mascot} alt="" /> */}
+                        <div className="mascot_heading">
+                            <p>Hi! I AM</p>
+                            <h1>THE <br /> MASCOT</h1>
+                        </div>
                         <p className='moscat_p'>Meet Himalayan Monal, The Mascot for the 38th National Games Uttarakhand 2024.known as the Impeyan Monal. This bird is also the state bird of uttarkhand.</p>
                         <button className='mascot_btn'>MEET MASCOT </button>
                     </div>
